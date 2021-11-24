@@ -8,3 +8,4 @@ class Card
     @card = card
     @suit = suit
   end
+end

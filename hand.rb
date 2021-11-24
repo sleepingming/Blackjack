@@ -5,6 +5,10 @@ class Hand
     @cards = []
   end
 
+  def clear_hand
+    @cards = []
+  end
+
   def current_points
     founded_a = false
     points = 0
@@ -18,7 +22,7 @@ class Hand
         founded_a = true
       end
     end
-    points -= 10 if (founded_a = true) && (points > 21)
+    points -= 10 if (founded_a == true) && (points > 21)
     points
   end
 
@@ -29,3 +33,4 @@ class Hand
     end
     cards
   end
+end
